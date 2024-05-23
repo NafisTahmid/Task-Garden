@@ -11,7 +11,7 @@ const Login = () => {
     let navigate = useNavigate();
     let location = useLocation();
 
-    let from = location?.state?.from?.pathname || "/home"; 
+    let from = location?.state?.from?.pathname || "/"; 
 
     const {user, google, gitHub, login, error} = useAuth();
 

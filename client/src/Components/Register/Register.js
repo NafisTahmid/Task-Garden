@@ -9,7 +9,7 @@ const Register = () => {
     let navigate = useNavigate();
     let location = useLocation();
 
-    let from = location?.state?.from?.pathname || "/home"; 
+    let from = location?.state?.from?.pathname || "/"; 
 
     user.email && navigate(from , {replace: true}); 
 
